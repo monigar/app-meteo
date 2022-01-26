@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="es">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aplicació Web Climatologia</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/style_dies.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <script src="JS/index_days.js" type="module"></script>
+    </head>
+    <body>
+         <!-- header-->
+         <div id="header"></div>
+         <!-- menu -->
+         <div id="menu"></div>
+         <!-- container-->
+        <div class="container-fluid dies">
+           <!-- <div class="col-12 cityDays"></div>-->
+        </div>
+        <!-- footer-->
+        <div id="footer"></div> 
+        
+        <!-- templates-->
+        <template id="template-days">
+            <div class="col-12 days temps">
+                <div class="days nomDia col-3">
+                    <p class="days nomDia" data-dia="selected">Martes</p>
+                    <p class="days diaSemana">21-12-2021</p>
+                </div>
+                <div class="col-2 meteoDay">
+                    <img class="days mx-auto d-block icon" src="#" alt="cielo despejado">
+                </div>
+                <div class="col-2 meteoDay">
+                    <span class="days tempMax align-middle">16ºC</span>
+                </div>
+                <div class="col-2 meteoDay">
+                    <span class="days tempMin align-middle">5ºC</span>
+                </div>
+                <div class="col-3 meteoDay">
+                    <span class="days text">Cielo despejado</span>
+                </div>
+            </div>
+        </template>   
+    </body>
+</html>

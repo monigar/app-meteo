@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="es">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aplicació Web Climatologia</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <script src="JS/index_actuality.js" type="module"></script>
+    </head>
+    <body>
+        <!-- header-->
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand">meteoMon</a>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" id= "citySearch" type="search" placeholder="escribe la población" aria-label="buscar poblacion" name="citySearch" >
+                    <button class="btn btn-outline-primary" id="searchButton" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="25" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/></svg>
+                    </button>
+                </form>
+                <button class="btn btn-outline-primary" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"/>
+                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"/>
+                    </svg>
+                </button>    
+            </div>
+        </nav>
+        <!-- menu -->
+        <nav class=" navbar bg-navbar" id="navbarNav">
+            <ul class="col-12 nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Actualidad</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hores.html">Horas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="dies.html">Días</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="air_quality.html">Calidad del aire</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="favorite.html">Favoritas</a>
+                </li>   
+            </ul>
+        </nav>  
+        <!-- container-->
+        <div class="container-fluid actuality">
+            <div class="row city">
+                <div class="col-10">
+                    <h1 id="poblacio" class="city text-center"></h1>  
+                </div>
+                <div class="col-2">
+                   <button class="btn btn-favorite" type="button"><i class="bi bi-heart"></i></button> 
+                </div>      
+            </div> 
+            <div class="row weather">   
+                <div class="col-8 square mx-auto d-block">
+                    <img class= "icon_weather mx-auto d-block" src= "" >
+                    <p id="temperatura" class="text-center"></p>
+                    <p class="feelslike text-center"></p>
+                    <p class="hora text-center"></p>    
+                </div>        
+            </div>
+            <div class="row astrology">
+                <div class="col-6 sun">
+                    <div class="astro">
+                        <img class="sol" src="images/sol.png" alt="imatge sol" title="sortida sol">
+                        <span class="morning"></span> 
+                    </div>
+                    <div class="astro">
+                        <img class="medio-sol" src="images/puesta_sol.png" alt="imatge posta sol" title="posta sol">
+                        <span class="evening"></span>
+                    </div>
+                </div>
+                <div class="col-6 moon-phases">
+                    <img class="luna" alt="imatge lluna" title="lluna" >
+                    <span class="moon text-center"></span>   
+                </div>    
+            </div>
+            <div class="row meteo">
+                <div class="col-3 previsio">
+                    <p class="dades"><i class="bi bi-wind">  </i>viento</p>
+                    <p class="wind text-center text">wind</p>
+                </div>
+                <div class="col-3 previsio">
+                    <p class="dades"><i class="bi bi-umbrella">  </i>lluvia</p>
+                    <p class="rain text-center text">rain</p>
+                </div>
+                <div class="col-3 previsio">
+                    <p class="dades"><i class="bi bi-moisture">  </i>humedad</p>
+                    <p class="humidity text-center text">humedat</p>
+                </div>
+                <div class="col-3 previsio">
+                    <p class="dades"><i class="bi bi-speedometer">  </i>presión</p>
+                    <p class="pressure text-center text">presión</p>
+                </div>   
+            </div>   
+        </div>
+        <!-- footer--> 
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <p class="footer">Copyright <img class="copyright" src="images/copyright.png"> meteoMon-Monica Garcia, 2021</p>
+                </div>
+            </div>    
+        </footer>     
+    </body>
+</html>

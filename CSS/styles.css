@@ -1,0 +1,194 @@
+body{
+    background-image: url('/images/fons_cel.jpg');
+    background-repeat: no-repeat;   
+}
+.container-fluid{
+    vertical-align: middle; 
+}
+
+/*-----------nav-----------------*/
+a.nav-link{
+    color: #FAFAF5;
+    border-right: #98ABC7;
+    font-size: 0.85rem;
+    padding: 10px;    
+}
+.nav-item{
+    border-right: 2px solid #98ABC7;
+}
+.nav-item:last-child{
+    border-right: none;
+}
+.nav-item-border{
+    border: 2px solid #98ABC7;
+}
+.active{
+    border-bottom: 2px solid #98ABC7 !important;   
+}
+.bg-navbar{
+    background-color: #4972C4;
+}
+
+.btn-info i{
+    font-size: 1.5rem;
+    color: #FAFAF5;
+}
+
+/*---------------content---------------*/
+
+.square{
+    background-position: center;
+    background: rgba(219, 231, 238, 0.4);
+    border-radius: 100px;
+    padding-bottom: 30px;
+    margin-bottom: 10px;   
+}
+#poblacio{
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    font-size: 2rem;
+    color: #FAFAF5;
+}
+.btn-favorite{
+    border-radius: 10px;
+    box-shadow: 1px 3px 3px rgb(17, 17, 17, 0.2);
+    background-color: rgba(117, 44, 44, 0.2);
+    font-size: 2rem;
+    margin-right: 10px;
+    margin-top: 20px;
+}
+.btn-favorite i{
+    color: #FAFAF5;
+}
+
+.btn-favorite :active{
+    color: #f51909;
+    background-color: #B19CC9;
+}
+
+.icon_weather{
+    width: 30%;
+    padding-top: 20px;
+}
+#temperatura{
+    font-size: 4rem;
+    color: #FAFAF5;
+}
+.hora{
+    font-size: 2rem;
+    color: #FAFAF5;
+}
+
+.feelslike{
+    font-size: 1.2rem;
+    color: #FAFAF5;
+}
+
+.sol, .medio-sol{
+    width: 10%;
+}
+.luna{
+    width: 15%;
+}
+.astrology{
+    margin-bottom: 30px;
+}
+.astro:first-child{
+    padding-top: 30px;   
+}
+.astro{
+    text-align: end;
+    color: #FAFAF5;
+    padding-right: 10px;
+}
+.moon-phases{
+    padding-top: 30px;
+    text-align: start;
+    color: #FAFAF5;
+}
+.temperature{
+    display: flex;
+    list-style: none;
+}
+.previsio {
+    border-right: 1px solid #B19CC9;
+    text-align: center;   
+}
+.previsio:last-child{
+    border-right: none;
+}
+.previsio i{
+    color: #ffbf10;
+}
+.meteo{
+    margin-bottom: 60px;
+    margin-top: 20px;
+    padding-top: 20px;
+    background-color: rgb(250, 250, 245, 0.2);
+}
+.dades{
+    border-bottom: 2px solid #B19CC9;
+    text-shadow: 1px 2px 3px rgb(17, 17, 17, 0.2);
+    color: #FAFAF5;
+    font-size: 0.75rem;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.favorite{
+    padding-bottom: 30px;
+}
+/*-------------- footer --------------*/
+footer{
+    background-color: #98ABC7;
+    padding-top: 10px ;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    
+}
+.copyright{
+    width: 2%;
+}
+.footer{
+    font-size: 0.5rem;
+    text-align: center;
+    padding-top: 5px;
+}
+
+/*--------------- @media ---------------*/
+@media only screen and (max-width: 600px){
+    a.nav-link{
+        font-size: 0.8rem;
+    }
+    p.text{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (min-width: 768px){
+    a.nav-link{
+        font-size: 1.2rem;
+    }
+    .dades{
+        font-size: 1rem;
+    }
+    .footer{
+        font-size: 0.7rem;
+    }
+    .copyright{
+        width: 3%;
+    }
+    .meteo{
+        margin-bottom: 120px;
+    }
+    .square{
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+
+}    
+
+
+
+

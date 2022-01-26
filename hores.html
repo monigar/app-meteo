@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="es">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Aplicació Web Climatologia Hores</title>
+        <link rel="stylesheet" href="CSS/styles.css">
+        <link rel="stylesheet" href="CSS/style_hores.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js" integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/" crossorigin="anonymous"></script>
+        <script src="JS/index_hours.js" type="module"></script>
+    </head>
+    <body>
+     <!-- header-->
+     <div id="header"></div>
+     <!-- menu -->
+     <div id="menu"></div>
+     <!-- container-->
+        <div class="container-fluid">
+            <!--<div class="col-12 cityHours">-->
+            </div>
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                    <div class="col-12 carousel-item active one"></div>
+                    <div class="col-12 carousel-item  two"></div>
+                    <div class="col-12 carousel-item  three"></div>
+                    <div class="col-12 carousel-item  four"></div>
+                    <div class="col-12 carousel-item  five"></div>
+                    <div class="col-12 carousel-item  six"></div>
+                </div> 
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button> 
+            </div>    
+        </div>
+        <!-- footer-->
+        <div id="footer"></div>
+
+        <!-- templates-->
+        <template id="template-hours">
+            <div class="col-3 pdg-hour">
+                <p class="hour bold time">hora</p>
+                <img class="mx-auto d-block" src="#" alt="cielo despejado">
+                <p class="hour, bold temp-size">14ºC</p>
+                <i class="bi bi-wind"></i>
+                <p class="hour wind">wind</p>
+                <i class="bi bi-umbrella"></i>
+                <p class="hour rain">rain</p>
+                <i class="bi bi-moisture"></i>
+                <p class="hour humidity">humidity</p>
+                <i class="bi bi-speedometer"></i>
+                <p class="hour pressure">pressure</p>
+                <i class="bi bi-thermometer"></i>
+                <p class="hour temp">feelslike</p>
+                <i class="bi bi-thermometer-snow"></i>
+                <p class="hour rocio">rocio</p>
+                <i class="bi bi-sun"></i>
+                <p class="hour uv">uv</p>            
+            </div>
+        </template>     
+    </body>
+
+</html>

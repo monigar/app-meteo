@@ -1,0 +1,38 @@
+.air_q{
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(250, 250, 245, 0.20);
+    padding: 5px 10px;
+    margin: 20px;  
+}
+.quality{
+    justify-content: center;
+}
+.air{
+    margin-top: 25px;
+}
+.aire{
+    margin-bottom: 0;
+    padding-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    color: #FAFAF5;
+    font-size: 1rem;
+}
+.quant{
+    font-size: 0.75rem;
+    text-align: center;
+    color: #FAFAF5;
+}
+
+div.value{
+    margin-top: 30px;
+}
+
+.healthy{
+    text-align: center;
+    background-color: #97d605f1;
+    padding: 10px 0px;
+    color:#FAFAF5;
+    border-radius: 10px;
+}

@@ -1,0 +1,21 @@
+div.favorite{
+    padding-top: 20px
+}
+.list{
+    display: inline-block;
+    padding: 20px 10px;
+    background-color: rgb(35, 37, 42, 0.25);
+    border-radius: 10px;
+    margin: 5px;
+    color: #FAFAF5 ;
+}
+.list a{
+    list-style: none;
+    text-decoration: none;    
+}
+
+i{
+    color: #FAFAF5;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}    
